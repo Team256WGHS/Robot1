@@ -50,5 +50,13 @@ public class DriveBase extends Subsystem {
         // Set the default command for a subsystem here.
         // setDefaultCommand(new MySpecialCommand());
     }
+   
+    public void setLeftMotorSpeed(double speed) {
+    	speedController1.set(speed);
+    }
+    
+    public void setRightMotorSpeed(double speed) {
+    	speedController2.set(speed);
+    }
 }
 
